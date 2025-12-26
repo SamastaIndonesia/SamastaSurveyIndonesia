@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Samasta Survei Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="logo">
+    <img src="logo.svg" alt="Logo">
+    <span>Samasta Survei Indonesia</span>
+  </div>
+
+  <!-- tombol hamburger (muncul di HP) -->
+  <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+    &#9776;
+  </button>
+
+  <nav class="nav" id="navMenu">
+    <ul>
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#services">Layanan</a></li>
+      <li><a href="#contact">Hubungi Kami</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="image-header">
+    <!-- VIDEO BACKGROUND -->
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="video2.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video.
+    </video>
+
+    <!-- Overlay gelap -->
+    <div class="image-overlay"></div>
+
+    <!-- Konten teks -->
+    <div class="header-content">
+        <h1>Solusi Profesional Survei & Pemetaan</h1>
+        <p>Survei • Pemetaan • Analisis Data</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+    <div class="about-container">
+
+        <!-- GAMBAR KIRI -->
+        <div class="about-image">
+            <img src="about-image.jpeg" alt="Kegiatan Survei Samasta Survei Indonesia">
+        </div>
+
+        <!-- TEKS KANAN -->
+        <div class="about-text">
+            <h2>Tentang Samasta Survei Indonesia</h2>
+            <p>
+                <strong>Samasta Survei Indonesia</strong> adalah komunitas jasa survei dan pemetaan yang menyediakan
+                layanan survei terintegrasi di darat, laut, dan udara. Kami hadir sebagai mitra profesional
+                dalam penyediaan data spasial yang akurat, terpercaya, dan sesuai dengan kebutuhan perencanaan,
+                pembangunan, serta pengelolaan wilayah.
+            </p>
+            <p>
+                Dengan dukungan tenaga yang kompeten dan berpengalaman di bidang survei dan pemetaan,
+                kami mengombinasikan metode konvensional dan teknologi modern seperti GNSS, Total Station,
+                fotogrametri UAV (drone), serta survei hidrografi untuk menghasilkan data berkualitas tinggi.
+            </p>
+            <p>
+                Kami berkomitmen pada ketelitian, efisiensi, dan integritas data, serta selalu mengutamakan
+                standar teknis dan keselamatan kerja dalam setiap kegiatan survei.
+            </p>
+          <div class="about-cta">
+            <a href="#contact" class="btn-about">Hubungi Kami</a>
+          </div>
+        </div>
+        
+    </div>
+</section>
+
+
+<!-- PROJECT -->
+<section id="services" class="section gray">
+    <h2>Layanan Kami</h2>
+
+    <div class="project-list">
+
+  <div class="project-card reveal service-card"
+     data-title="Survei Topografi"
+     data-desc="Pengukuran dan pemetaan detail permukaan tanah untuk kebutuhan perencanaan, desain, dan konstruksi."
+     data-img1="topo-1.jpeg"
+     data-img2="topo-2.jpeg"
+     data-img3="topo-3.jpeg">
+
+  <img src="layanan-topografi.jpeg" alt="Survei Topografi">
+  <h3>Survei Topografi</h3>
+  <p>Pengukuran dan pemetaan detail permukaan tanah untuk kebutuhan perencanaan, desain, dan konstruksi.</p>
+
+  <!-- DETAIL (tidak tampil di card, tapi dipakai modal) -->
+  <div class="service-detail" hidden>
+    <ul>
+      <li>Output: peta kontur, DTM/DEM, situasi (planimetri), profil memanjang/melintang</li>
+      <li>Metode: Total Station, GNSS RTK/Static, leveling</li>
+      <li>Skala umum: 1:500 – 1:2000</li>
+      <li>Durasi: tergantung luas area & akses lapangan</li>
+    </ul>
+  </div>
+</div>
+
+  <div class="project-card reveal service-card"
+     data-title="Survei Fotogrametri"
+     data-desc="Pemetaan berbasis UAV (drone) untuk menghasilkan ortofoto, DSM, dan model 3D yang akurat."
+     data-img1="foto-1.jpeg"
+     data-img2="foto-2.jpeg"
+     data-img3="foto-3.jpeg">
+
+  <img src="layanan-fotogrametri.jpeg" alt="Survei Fotogrametri">
+  <h3>Survei Fotogrametri</h3>
+  <p>Pemetaan berbasis UAV (drone) untuk menghasilkan ortofoto, DSM, dan model 3D yang akurat.</p>
+
+  <div class="service-detail" hidden>
+    <ul>
+      <li>Output: ortofoto, DSM/DTM, point cloud, 3D mesh</li>
+      <li>Perlengkapan: UAV + GCP/ICP</li>
+      <li>Cocok untuk: progres konstruksi, pertambangan, site plan</li>
+      <li>Deliverables: laporan + data GIS/CAD</li>
+    </ul>
+  </div>
+</div>
+
+  <div class="project-card reveal service-card"
+     data-title="Survei Hidrografi"
+     data-desc="Pengukuran kedalaman dan kondisi perairan untuk keperluan pelabuhan, sungai, dan wilayah pesisir."
+     data-img1="hidro-1.jpeg"
+     data-img2="hidro-2.jpeg"
+     data-img3="hidro-3.jpeg">
+
+  <img src="layanan-hidrografi.jpeg" alt="Survei Hidrografi">
+  <h3>Survei Hidrografi</h3>
+  <p>Pengukuran kedalaman dan kondisi perairan untuk keperluan pelabuhan, sungai, dan wilayah pesisir.</p>
+
+  <div class="service-detail" hidden>
+    <ul>
+      <li>Output: batimetri, profil dasar perairan, peta kedalaman</li>
+      <li>Metode: echosounder + GNSS, koreksi pasut</li>
+      <li>Aplikasi: alur pelayaran, sedimentasi, dredging</li>
+    </ul>
+  </div>
+</div>
+
+  <div class="project-card reveal service-card"
+     data-title="Analisis Data Spasial"
+     data-desc="Pengolahan, analisis, dan visualisasi data spasial berbasis GIS untuk mendukung pengambilan keputusan."
+     data-img1="gis-1.jpg"
+     data-img2="gis-2.jpg"
+     data-img3="gis-3.jpg">
+
+  <img src="layanan-gis.jpeg" alt="Analisis Data Spasial">
+  <h3>Analisis Data Spasial</h3>
+  <p>Pengolahan, analisis, dan visualisasi data spasial berbasis GIS untuk mendukung pengambilan keputusan.</p>
+
+  <div class="service-detail" hidden>
+    <ul>
+      <li>Analisis: overlay, buffer, suitability, NDVI/land cover, network</li>
+      <li>Output: peta tematik, dashboard, laporan analisis</li>
+      <li>Format: SHP/GeoJSON, GeoTIFF, PDF, DWG</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Hubungi Kami</h2>
+
+  <form action="https://formspree.io/f/xqekkppj" method="POST">
+    <input type="text" name="Nama" placeholder="Nama Lengkap" required>
+    <input type="email" name="Email" placeholder="Email" required>
+    <textarea name="pesan" placeholder="Pesan" required></textarea>
+
+    <!-- Opsional: subject email yang masuk -->
+    <input type="hidden" name="_subject" value="Pesan dari Website Samasta Survei Indonesia">
+
+    <!-- Opsional: redirect setelah submit (ganti link ini dengan link GitHub Pages kamu) -->
+    <!-- <input type="hidden" name="_next" value="https://USERNAME.github.io/REPO/thankyou.html"> -->
+
+    <button type="submit">Kirim Pesan</button>
+  </form>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer reveal-footer">
+  <div class="footer-container">
+
+    <!-- COMPANY INFO -->
+    <div class="footer-box reveal-footer-item">
+      <h3>Samasta Survei Indonesia</h3>
+      <p>
+        Komunitas jasa survei dan pemetaan yang menyediakan layanan
+        survei terintegrasi dan solusi data spasial profesional.
+      </p>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-box reveal-footer-item">
+      <h3>Layanan</h3>
+      <ul>
+        <li>Survei Topografi</li>
+        <li>Survei Fotogrametri</li>
+        <li>Survei Hidrografi</li>
+        <li>Analisis Data Spasial</li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-box reveal-footer-item">
+      <h3>Alamat</h3>
+      <p>📍 Jl. Keputih Tegal Timur I kav. 379, Keputih, Sukolilo, Surabaya</p>
+      <p>📧 samastaindonesia44@gmail.com</p>
+    </div>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="footer-box reveal-footer-item">
+      <h3>Sosial Media</h3>
+      <div class="social-links">
+        <a href="#">Instagram @samasta.indonesia</a>
+        <a href="#">📞 085792126822</a>
+        <a href="#">📞 085706526828</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom reveal-footer-item">
+    <p>&copy; 2026 Samasta Survei Indonesia. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<div class="modal" id="serviceModal" aria-hidden="true">
+  <div class="modal-overlay" data-close="true"></div>
+
+  <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Tutup">&times;</button>
+
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
+
+    <!-- TARUH SLIDER DI SINI -->
+<div class="slider" id="modalSlider">
+  <button class="slider-btn prev" type="button" aria-label="Sebelumnya">&#10094;</button>
+  <div class="slides" id="modalSlides"></div>
+  <button class="slider-btn next" type="button" aria-label="Berikutnya">&#10095;</button>
+  <div class="dots" id="modalDots"></div>
+</div>
+    
+    <div id="modalDetail"></div>
+
+    <div class="modal-actions">
+      <a class="modal-btn" href="https://wa.me/6285792126822" target="_blank" rel="noopener">
+        Konsultasi via WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  // observe elemen reveal (card)
+  reveals.forEach((reveal) => {
+    observer.observe(reveal);
+  });
+
+  // ✅ observe footer animasi
+  document.querySelectorAll(".reveal-footer, .reveal-footer-item").forEach((el) => {
+    observer.observe(el);
+  });
+</script>
+
+<script>
+  // ===== MODAL LAYANAN =====
+  const modal = document.getElementById("serviceModal");
+const modalTitle = document.getElementById("modalTitle");
+const modalDesc = document.getElementById("modalDesc");
+const modalDetail = document.getElementById("modalDetail");
+const modalClose = document.getElementById("modalClose");
+
+// ===== SLIDER ELEMENTS =====
+const slider = document.getElementById("modalSlider");
+const slidesWrap = document.getElementById("modalSlides");
+const dotsWrap = document.getElementById("modalDots");
+const prevBtn = slider?.querySelector(".prev");
+const nextBtn = slider?.querySelector(".next");
+
+let currentIndex = 0;
+
+function renderSlider(imgs) {
+  if (!slider) return;
+
+  slidesWrap.innerHTML = "";
+  dotsWrap.innerHTML = "";
+  currentIndex = 0;
+
+  if (!imgs.length) {
+    slider.style.display = "none";
+    return;
+  }
+
+  slider.style.display = "block";
+
+  imgs.forEach((src, idx) => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = `Slide ${idx + 1}`;
+    if (idx === 0) img.classList.add("active");
+    slidesWrap.appendChild(img);
+
+    const dot = document.createElement("div");
+    dot.className = "dot" + (idx === 0 ? " active" : "");
+    dot.addEventListener("click", () => showSlide(idx));
+    dotsWrap.appendChild(dot);
+  });
+}
+
+function showSlide(index) {
+  const imgs = slidesWrap.querySelectorAll("img");
+  const dots = dotsWrap.querySelectorAll(".dot");
+  if (!imgs.length) return;
+
+  currentIndex = (index + imgs.length) % imgs.length;
+
+  imgs.forEach((img, i) => img.classList.toggle("active", i === currentIndex));
+  dots.forEach((dot, i) => dot.classList.toggle("active", i === currentIndex));
+}
+
+prevBtn?.addEventListener("click", () => showSlide(currentIndex - 1));
+nextBtn?.addEventListener("click", () => showSlide(currentIndex + 1));
+
+function openModal(card) {
+  modalTitle.textContent = card.dataset.title || "";
+  modalDesc.textContent = card.dataset.desc || "";
+
+  // ✅ ambil detail dari div hidden (bukan data-detail)
+  modalDetail.innerHTML = card.querySelector(".service-detail")?.innerHTML || "";
+
+  // ✅ ambil 3 gambar slider dari data-img1/2/3
+  const imgs = [card.dataset.img1, card.dataset.img2, card.dataset.img3].filter(Boolean);
+  renderSlider(imgs);
+
+  modal.classList.add("show");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal() {
+  modal.classList.remove("show");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+document.querySelectorAll(".service-card").forEach(card => {
+  card.addEventListener("click", () => openModal(card));
+});
+
+modalClose.addEventListener("click", closeModal);
+
+modal.addEventListener("click", (e) => {
+  if (e.target.dataset.close === "true") closeModal();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  // ===== MODAL ELEMENTS =====
+  const modal = document.getElementById("serviceModal");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalDesc = document.getElementById("modalDesc");
+  const modalDetail = document.getElementById("modalDetail");
+  const modalClose = document.getElementById("modalClose");
+
+  // ===== SLIDER ELEMENTS =====
+  const slider = document.getElementById("modalSlider");
+  const slidesWrap = document.getElementById("modalSlides");
+  const dotsWrap = document.getElementById("modalDots");
+  const prevBtn = slider?.querySelector(".prev");
+  const nextBtn = slider?.querySelector(".next");
+
+  let currentIndex = 0;
+
+  function renderSlider(imgs) {
+    if (!slider || !slidesWrap || !dotsWrap) return;
+
+    slidesWrap.innerHTML = "";
+    dotsWrap.innerHTML = "";
+    currentIndex = 0;
+
+    // sembunyikan kalau tidak ada gambar
+    if (!imgs || imgs.length === 0) {
+      slider.style.display = "none";
+      return;
+    }
+
+    slider.style.display = "block";
+
+    imgs.forEach((src, idx) => {
+      const img = document.createElement("img");
+      img.src = src;
+      img.alt = `Slide ${idx + 1}`;
+      if (idx === 0) img.classList.add("active");
+      slidesWrap.appendChild(img);
+
+      const dot = document.createElement("div");
+      dot.className = "dot" + (idx === 0 ? " active" : "");
+      dot.addEventListener("click", () => showSlide(idx));
+      dotsWrap.appendChild(dot);
+    });
+  }
+
+  function showSlide(index) {
+    const imgs = slidesWrap.querySelectorAll("img");
+    const dots = dotsWrap.querySelectorAll(".dot");
+    if (!imgs.length) return;
+
+    currentIndex = (index + imgs.length) % imgs.length;
+
+    imgs.forEach((img, i) => img.classList.toggle("active", i === currentIndex));
+    dots.forEach((dot, i) => dot.classList.toggle("active", i === currentIndex));
+  }
+
+  prevBtn?.addEventListener("click", () => showSlide(currentIndex - 1));
+  nextBtn?.addEventListener("click", () => showSlide(currentIndex + 1));
+
+  // ===== OPEN/CLOSE MODAL =====
+  function openModal(card) {
+    modalTitle.textContent = card.dataset.title || "";
+    modalDesc.textContent = card.dataset.desc || "";
+
+    // ambil detail dari div hidden (lebih aman daripada data-detail multiline)
+    modalDetail.innerHTML = card.querySelector(".service-detail")?.innerHTML || "";
+
+    // ambil 3 gambar dari data-img1/2/3
+    const imgs = [card.dataset.img1, card.dataset.img2, card.dataset.img3].filter(Boolean);
+    renderSlider(imgs);
+
+    modal.classList.add("show");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    modal.classList.remove("show");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  // klik card layanan
+  document.querySelectorAll(".service-card").forEach(card => {
+    card.addEventListener("click", () => openModal(card));
+  });
+
+  // tombol X
+  modalClose?.addEventListener("click", closeModal);
+
+  // klik overlay (yang punya data-close="true")
+  modal?.addEventListener("click", (e) => {
+    if (e.target.dataset.close === "true") closeModal();
+  });
+
+  // ESC
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.classList.contains("show")) closeModal();
+  });
+
+});
+</script>
+
+<script>
+  const navToggle = document.getElementById("navToggle");
+  const navMenu = document.getElementById("navMenu");
+
+  navToggle.addEventListener("click", () => {
+    const isOpen = navMenu.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  // opsional: kalau klik salah satu menu, dropdown auto nutup
+  navMenu.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => {
+      navMenu.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+</script>
+
+
+</body>
+</html>
